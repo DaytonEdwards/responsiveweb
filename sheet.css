@@ -1,0 +1,41 @@
+
+.tab {
+	overflow: hidden;
+	border: 1px solid rgb(228, 142, 142);
+	background-color: #961b1b;
+}
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+.tab button:hover {
+	background-color: #ddd;
+}
+.tab button.active {
+	background-color: #ccc;
+}
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid rgb(44, 42, 42);
+	border-top: none;
+}
+@media screen and (max-width: 800px) {
+	p {
+		max-width: 250px;
+		margin: 8px;
+	}
+}
+
+@media screen and (min-width: 800px){
+	p{
+		width: 100%;
+		flex-direction: column;
+	}
+}
